@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq235r11h8eqg"]
+
+[ext_resource type="PackedScene" uid="uid://dnx53kmwcrmbw" path="res://scenes/player.tscn" id="1_mxodl"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_mxodl")]
+position = Vector2(39, 37)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(-3, -3)
+position_smoothing_enabled = true
